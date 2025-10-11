@@ -91,16 +91,7 @@ The base model incorrectly matched "Dianteisopentadecanoylphosphatidylethanolami
 
 MetaAlignGen offers several key advantages: it reduces days of manual curation work through automation, employs semantic understanding to recognize biochemical equivalence beyond simple string matching, and leverages domain-specific fine-tuning on metabolic nomenclature that general LLMs lack. The LoRA approach enables efficient training with limited GPU resources while achieving 75.6% accuracy with significant false positive reduction. However, the model's 345M parameter size may limit its ability to capture the full complexity of chemical nomenclature, and it cannot fully replace human expert insight for highly ambiguous cases. Additionally, performance is inherently limited by the coverage of the BiGG database used for candidate matching.
 
-## Citation
-
-```
-@software{metaalignen2024,
-  author = {Yige Gong},
-  title = {MetaAlignGen: Fine-tuned Generative Model for Metabolite Identifier Alignment},
-  year = {2024},
-  url = {https://github.com/yourusername/MetaAlignGen}
-}
-```
+\
 
 ## References
 
