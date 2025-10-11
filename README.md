@@ -19,11 +19,11 @@ The model architecture is built on BioMegatron 345m Uncased, a transformer-based
 
 <img src="bert.png" alt="BERT Embedding" width="400"/>
 
-*Figure 2: BERT input-to-embedding process for metabolite name encoding*
+
 
 <img src="LoRA.jpg" alt="LoRA Architecture" width="400"/>
 
-*Figure 3: LoRA fine-tuning approach with low-rank decomposition*
+
 
 ### Training Configuration
 
