@@ -19,11 +19,10 @@ The model architecture is built on BioMegatron 345m Uncased, a transformer-based
 
 <img src="bert.png" alt="BERT Embedding" width="700"/>
 
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
 <img src="LoRA.jpg" alt="LoRA Architecture" width="450"/>
 
 
