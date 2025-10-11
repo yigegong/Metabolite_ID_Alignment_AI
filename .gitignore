@@ -1,0 +1,18 @@
+# Claude Code settings
+.claude/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Model files (optional - uncomment if models are too large)
+# metabolite_lora_model/
