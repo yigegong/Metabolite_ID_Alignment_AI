@@ -17,11 +17,13 @@ MetaAlignGen automates metabolite identifier alignment by fine-tuning BioMegatro
 
 The model architecture is built on BioMegatron 345m Uncased, a transformer-based language model pretrained on biomedical literature. Fine-tuning is performed using LoRA (Low-Rank Adaptation) with rank r=16 and scaling factor α=32, targeting the query, key, value, and dense layers in the attention mechanism. The training approach employs contrastive learning with a margin-based loss function, teaching the model to pull similar metabolite pairs together in embedding space while pushing dissimilar pairs apart.
 
-![BERT Embedding](bert.png)
+<img src="bert.png" alt="BERT Embedding" width="300"/>
 
+*Figure 2: BERT input-to-embedding process for metabolite name encoding*
 
-![LoRA Architecture](LoRA.jpg)
+<img src="LoRA.jpg" alt="LoRA Architecture" width="300"/>
 
+*Figure 3: LoRA fine-tuning approach with low-rank decomposition*
 
 ### Training Configuration
 
