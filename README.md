@@ -1,6 +1,6 @@
 # MetaAlignGen: Fine-tuned Generative Model for Metabolite Identifier Alignment
 
-Final Project for ECE 175B/ECE 285 - Probabilistic Reasoning and Graphical Models, UC San Diego
+This is the final Project for ECE 175B/ECE 285 - Probabilistic Reasoning and Graphical Models at UC San Diego.
 
 ## Problem Statement
 
