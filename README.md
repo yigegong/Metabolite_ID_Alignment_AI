@@ -7,7 +7,7 @@ Final Project for ECE 175B/ECE 285 - Probabilistic Reasoning and Graphical Model
 Genome-scale metabolic models (GEMs) require unique metabolite identifiers for accurate simulation. However, model reconstruction often involves transferring information from multiple template models, resulting in identifier mismatches for the same metabolite. Manual curation of these mismatches is time-consuming and can take days for a typical model with 2000+ metabolites. Existing rule-based approaches fail when metabolite identifiers are not in existing databases, and broad-domain models like ChatGPT-4o lack the specialized biochemical knowledge needed for accurate metabolite name alignment.
 
 ![Problem Illustration](problem_illustration.png)
-*Figure 1: Identifier alignment process showing how MetaAlignGen automates the manual comparison task*
+
 
 ## Solution
 
@@ -18,10 +18,10 @@ MetaAlignGen automates metabolite identifier alignment by fine-tuning BioMegatro
 The model architecture is built on BioMegatron 345m Uncased, a transformer-based language model pretrained on biomedical literature. Fine-tuning is performed using LoRA (Low-Rank Adaptation) with rank r=16 and scaling factor α=32, targeting the query, key, value, and dense layers in the attention mechanism. The training approach employs contrastive learning with a margin-based loss function, teaching the model to pull similar metabolite pairs together in embedding space while pushing dissimilar pairs apart.
 
 ![BERT Embedding](bert.png)
-*Figure 2: BERT input-to-embedding process for metabolite name encoding*
+
 
 ![LoRA Architecture](LoRA.jpg)
-*Figure 3: LoRA fine-tuning approach with low-rank decomposition*
+
 
 ### Training Configuration
 
@@ -49,7 +49,7 @@ The training dataset consists of 3,000 metabolite pairs generated from the BiGG 
 - **Improvement:** 98.0%
 
 ![Training Loss Curve](loss.png)
-*Figure 4: Training loss curve showing 98% improvement from initial loss of 0.0924 to final loss of 0.0019*
+
 
 ### Testing Performance
 
