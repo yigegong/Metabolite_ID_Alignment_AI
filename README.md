@@ -41,7 +41,7 @@ The model architecture is built on BioMegatron 345m Uncased, a transformer-based
 
 ### Training Dataset
 
-The training dataset consists of 3,000 metabolite pairs generated from the BiGG Models database, balanced equally between 1,500 positive and 1,500 negative cases. Positive pairs are created by modifying original metabolite names with randomly substituted delimiters (-, _, space, comma, parentheses), simulating real-world nomenclature variations. Negative pairs undergo the same delimiter modifications but additionally have one random functional group removed, creating chemically distinct compounds. This augmentation strategy ensures the model learns to recognize biochemical nomenclature patterns rather than simply memorizing name pairs.
+The training dataset consists of 3,000 metabolite pairs generated from the BiGG Models database, balanced equally between 1,500 positive and 1,500 negative cases. Positive pairs are created by modifying original metabolite names with randomly substituted delimiters (-, _, space, comma, parentheses), simulating real-world nomenclature variations. Negative pairs undergo the same delimiter modifications but additionally have one random functional group removed, creating chemically distinct compounds. This strategy ensures the model learns to recognize biochemical nomenclature patterns rather than simply memorizing name pairs.
 
 ## Results
 
