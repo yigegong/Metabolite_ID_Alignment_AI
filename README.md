@@ -71,11 +71,6 @@ The training dataset consists of 3,000 metabolite pairs generated from the BiGG 
 - **False Negatives:** 9 metabolites
 - **Total Errors:** 33 metabolites
 
-#### Improvement Summary
-- **Accuracy Gain:** +25.2 percentage points (50.4% → 75.6%)
-- **False Positive Reduction:** 38 metabolites (61% reduction: 62 → 24)
-- **Error Reduction:** 34 metabolites (51% reduction: 67 → 33)
-
 ### Key Success Examples
 
 **Example 1: Corrected False Positive**
